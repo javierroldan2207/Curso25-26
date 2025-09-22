@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+header {
+    background-color: #4a148c; 
+    padding: 15px 30px;
+}
+
+#enlaces {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+#enlaces a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#enlaces a:hover {
+    color: #ffd54f; 
+}
+
+#enlaces button {
+    background-color: #ffd54f;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#enlaces button:hover {
+    background-color: #ffca28;
+    transform: scale(1.05);
+}
+
+#descuentos{
+    background-color: #ffeb3b;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+
