@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    background-image: url(../Imagenes/registrarse.avif);
+    background-size: cover;
+    height: 100%;
+}
+
+
+header {
+    background-color: #0e5dd4cb; 
+    padding: 15px 30px;
+    box-shadow: #0e5dd4cb;
+}
+
+#enlaces {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+#enlaces a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#enlaces a:hover {
+    color: #ffd54f; 
+}
+
+#enlaces button {
+    background-color: #ffd54f;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#enlaces button:hover {
+    background-color: #ffca28;
+    transform: scale(1.05);
+}
+
+div{
+    text-align: center;
+    border-radius: 8%;
+}
+
+h1{
+    text-align: center;
+    color: #ffca28;
+    font-style: oblique;
+}
+
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.producto {
+    background-color: #fffb02d8;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.producto p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.3);
+
+}
+
+footer{
+    background-color: #ffca28;
+    text-align: right;
+}

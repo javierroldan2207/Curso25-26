@@ -3,12 +3,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f5f5f5;
     color: #333;
-    background-image: url(../Imagenes/Principal.avif);
 }
 
 
 header {
-    background-color: #0e5dd4cb;
+    background-color: #0e5dd4cb; 
     padding: 15px 30px;
     box-shadow: #0e5dd4cb;
 }
@@ -28,7 +27,7 @@ header {
 }
 
 #enlaces a:hover {
-    color: #ffd54f;
+    color: #ffd54f; 
 }
 
 #enlaces button {
@@ -45,29 +44,7 @@ header {
     background-color: #ffca28;
     transform: scale(1.05);
 }
-
-#descuento {
-    background-color: #ffeb3b;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    color: #ece909;
-}
-
-h1 {
-    text-align: center;
-    color: #ffeb3b;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-p {
-    text-align: center;
-    color: #333;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-
-#imagenes {
-    text-align: center;
-    justify-content: center;
+footer{
+    background-color: #ffca28;
+    text-align: right;
 }

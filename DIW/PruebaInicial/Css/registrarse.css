@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    background-image: url('../Imagenes/registrarse.avif');
+    background-size: cover;
+    height: 100%;
+  
+}
+
+header {
+    background-color: #0e5dd4cb; 
+    padding: 15px 30px;
+    box-shadow: #0e5dd4cb;
+}
+
+#enlaces {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+#enlaces a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#enlaces a:hover {
+    color: #ffd54f; 
+}
+
+#enlaces button {
+    background-color: #ffd54f;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#formulario {
+    background: rgba(255, 255, 255, 0.85); 
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#formulario h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #555;
+}
+
+footer{
+    background-color: #ffca28;
+    text-align: right;
+}
