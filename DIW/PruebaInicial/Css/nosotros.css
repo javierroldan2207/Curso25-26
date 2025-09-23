@@ -3,8 +3,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f5f5f5;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(../Imagenes/registrarse.avif);
+    background-size: cover;
+    height: 100%;
 }
-
 
 header {
     background-color: #0e5dd4cb; 
@@ -44,7 +49,30 @@ header {
     background-color: #ffca28;
     transform: scale(1.05);
 }
-footer{
+
+main {
+    flex: 1; 
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+}
+
+main h2 {
+    color: #0e5dd4cb;
+    margin-bottom: 15px;
+}
+
+main p {
+    font-size: 16px;
+    margin: 8px 0;
+    padding: 10px;
+    background: #ffffff;
+    border-left: 4px solid #0e5dd4cb;
+    border-radius: 4px;
+}
+
+footer {
     background-color: #ffca28;
     text-align: right;
+    padding: 15px 30px;
 }
