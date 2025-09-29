@@ -18,5 +18,4 @@ function maxNota($alumnos){
     }
     return $result;
 }
-
 echo maxNota($alumnos);

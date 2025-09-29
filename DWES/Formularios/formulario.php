@@ -8,13 +8,18 @@ if(isset($_GET['submit'])){
     echo "Hola $nombre, tu color favorito es el $color";
 }
 
-if(isset($_GET))
+if($_SERVER["REQUEST_METHOD"] == "GET"){
+  if(isset($_GET["name"]) && !empty($_GET["name"])){
+   echo $_GET["name"];
+}
+}
+
 ?>
 <form>
   <div class="form-group row">
     <label for="name" class="col-4 col-form-label">Name</label> 
     <div class="col-8">
-      <input id="name" name="name" type="text" class="form-control">
+      <input id="name" name="name" type="text" class="form-control" value= <?php if($_SERVER["REQUEST_METHOD"] == "GET"){ if(isset($_GET["name"]) && !empty($_GET["name"])){ echo $_GET["name"];}}?>>
     </div>
   </div>
   <div class="form-group row">
