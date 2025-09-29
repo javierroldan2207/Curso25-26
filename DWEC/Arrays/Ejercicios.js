@@ -31,3 +31,4 @@ function ordenarNotas(notas){
 }
 //Imprime el array de notas ordenado por la consola.
 console.log(ordenarNotas(notas));
+console.log(notas.sort((a,b)=>a-b));
