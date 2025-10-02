@@ -33,3 +33,8 @@ function addGrade(studentName, grade) {
     }
 }
 addGrade("Maria", 7);
+
+
+//Imprimir los nombres de los estudiantes cuya nota promedio sea mayor que 8.
+let student = gradebook.students.filter(student => student.average > 8);
+console.log(student.name);
