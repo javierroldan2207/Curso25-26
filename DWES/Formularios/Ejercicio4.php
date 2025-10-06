@@ -23,7 +23,7 @@
             $nombre='';
             $estadoCivil='';
         }
-        if(!empty($_POST["name"]) && !empty($_POST["radio"])){
+        if(!empty($_POST["name"]) && !empty($_POST["radio"]) && empty($_POST["checkbox"])){
             echo "Nombre: " . $nombre . ", estado civil: " . $estadoCivil;
             $nombre='';
             $estadoCivil='';
