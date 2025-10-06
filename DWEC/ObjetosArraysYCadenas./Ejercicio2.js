@@ -38,3 +38,7 @@ addGrade("Maria", 7);
 //Imprimir los nombres de los estudiantes cuya nota promedio sea mayor que 8.
 let student = gradebook.students.filter(student => student.average > 8);
 console.log(student.name);
+
+//Ordenar los estudiantes en función de sus promedios, de mayor a menor.
+let ordenados = gradebook.students.sort((a,b) => b.average-a.average);
+console.log(ordenados);
