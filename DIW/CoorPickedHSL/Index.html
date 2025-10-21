@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Colores HSL</title>
+</head>
+<body>
+
+    <p>Tono</p>
+    <input type="range" id="hue" min="0" max="360" value="0">
+    <p>Saturación (%)</p>
+    <input type="range" id="saturation" min="0" max="100" value="100">
+    <p>Luminosidad (%)</p>
+    <input type="range" id="lightness" min="0" max="100" value="50">
+
+    <div>
+        <div id="colorBox" style="width: 100px; height:100px; background-color: hsl(0, 100%, 50%);"></div>
+        <p id="colorInfo"></p>
+        <p id="colorHex"></p>
+        <p id="colorRgb"></p>
+    </div>  
+
+    <script src="action.js"></script>
+</body>
+</html>
