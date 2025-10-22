@@ -5,8 +5,15 @@ img{
     border: 5px solid darkred;
 }
 
-#global{
+#normal{
     background-color: lightblue;
+    border-radius: 8px;
+    padding: 20px  100px;
+   
+}
+
+#premium{
+    background-color: rgb(195, 221, 135);
     border-radius: 8px;
     padding: 20px  100px;
    
@@ -36,3 +43,14 @@ p{
     color: darkred
 }
 
+.skill{
+    background-color: rgba(127, 255, 212, 0.507);
+    border-radius: 8px;
+    margin: 10px;
+    width: 50px;
+
+}
+
+#skills{
+    display: flex;
+}
