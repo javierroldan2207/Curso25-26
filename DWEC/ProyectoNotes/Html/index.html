@@ -3,39 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacarandá Inventory</title>
+    <title>Alumn Notes</title>
     <link rel="stylesheet" href="./css/simple.min.css">
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
 
 </head>
 <body>
     <main>
-        <h1>Jacarandá Inventory</h1>
+        <h1>Alumn Notes</h1>
         <section>
-            <h2>Add new product</h2>
+            <h2>Add new note:</h2>
             <form id="addProduct">
-                <label for="name">Product name:</label>
+                <label for="name">Name:</label>
                 <input type="text" name="name" id="name">
 
-                <label for="quantity">Quantity: </label>
-                <input type="number" name="quantity" id="quantity">
+                <label for="quantity">Grades: </label>
+                <input type="number" name="grades" id="grades">
 
-                <label for="price">Price: </label>
-                <input type="number" name="price" id="price">
-                
-                <button type="submit">Add product</button>
+                <button type="submit">Add Note</button>
             </form>
         </section>
 
         <section>
-            <h2>Inventory</h2>
+            <h2>Notes</h2>
             <table>
                 <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Quantity</th>
-                        <th>Price</th>
-                        <th>Actions</th>
+                        <th>Grades</th>
+                        <th>AVG</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -44,6 +40,6 @@
             </table>
         </section>
     </main>
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="/ProyectoNotes/js/main.js"></script>
 </body>
 </html>
