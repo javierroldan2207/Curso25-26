@@ -8,6 +8,9 @@ import Person from './Person'
 import SaludososPersonalizado from './SaludosPersonalizado'
 import UserCard from './UserCard'
 import MovieCard from './MovieCard'
+import Contador from './Contador'
+import CambiadorTexto from './Cambiadortexto'
+import MostrarOcultar from './MostrarOcultar'
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
       <UserCard  name= "Mario" age= {28} city="Londres"/>
       <UserCard  name= "Lola" age= {76} city="Madird"/>
       <MovieCard title = "Magos" direcctor = "Luis" year = {2001} />
+      <Contador/>
+      <CambiadorTexto/>
+      <MostrarOcultar/>
     </>
   )
 }
