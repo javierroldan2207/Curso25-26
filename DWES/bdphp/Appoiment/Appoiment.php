@@ -2,6 +2,8 @@
 require_once __DIR__ ."/AppoimentUtility.php";
 
 $appoiments = AppoimentUtility::getAllAppoiment();
+
+require_once __DIR__ . "/../includes/header.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,5 +37,8 @@ $appoiments = AppoimentUtility::getAllAppoiment();
             <?php endforeach; ?>
         </tbody>
     </table>    
+    <?php
+    require_once __DIR__ . "/../includes/footer.php";
+    ?>
 </body>
 </html>

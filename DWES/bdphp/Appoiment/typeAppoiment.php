@@ -2,6 +2,9 @@
 require_once __DIR__ . "/AppoimentUtility.php";
 
 $tipos = AppoimentUtility::getTiposCita();
+
+require_once __DIR__ . "/../includes/header.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -29,5 +32,8 @@ $tipos = AppoimentUtility::getTiposCita();
             <?php endforeach; ?>
         </tbody>
     </table>
+    <?php
+    require_once __DIR__ . "/../includes/footer.php";
+    ?>
 </body>
 </html>
