@@ -23,18 +23,22 @@ require_once __DIR__ . "/../includes/header.php";
                 <th>Fecha</th>
                 <th>Hora</th>
             </tr>
-        </thead>  
+        </thead>   
         <tbody>
-            <?php
-            foreach($appoiments as $appoiment):?>
-            <tr>  
-                <td><?= $appoiment["id"] ?></td>
-                <td><?= $appoiment["userName"] ?></td>
-                <td><?= $appoiment["type"] ?></td>
-                <td><?= $appoiment["fecha"] ?></td>
-                <td><?= $appoiment["hora"] ?></td>
-            </tr>
-            <?php endforeach; ?>
+          <?php
+          
+             foreach($appoiments as $appoiment){
+            echo "<tr>";
+                echo '<td>'.$appoiment['id'].'</td>';
+                echo '<td>'.$appoiment['userName'].'</td>';
+                echo '<td>'.$appoiment['type'].'</td>';
+                echo '<td>'.$appoiment['fecha'].'</td>';
+                echo '<td>'.$appoiment['hora'].'</td>';
+                echo "<td><a href='./delete.php?id=" . $appoiment["id"] . "'><button>🗑️</button></a></td>";
+                echo "<td><button>✏️</button></td>";
+            echo "</tr>";
+             }
+          ?>
         </tbody>
     </table>    
     <?php

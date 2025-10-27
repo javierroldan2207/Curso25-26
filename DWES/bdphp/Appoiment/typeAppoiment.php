@@ -24,12 +24,14 @@ require_once __DIR__ . "/../includes/header.php";
             </tr>
         </thead>
         <tbody>
-            <?php foreach($tipos as $tipo): ?>
-                <tr>
-                    <td><?= $tipo['id'] ?></td>
-                    <td><?= $tipo['nombre'] ?></td>
-                </tr>
-            <?php endforeach; ?>
+            <?php 
+            foreach($tipos as $tipo){
+                echo "<tr>";
+                    echo '<td>'.$tipo['id'].'</td>';
+                    echo '<td>'.$tipo['nombre'].'</td>';
+                echo "</tr>";
+            }
+            ?>
         </tbody>
     </table>
     <?php
