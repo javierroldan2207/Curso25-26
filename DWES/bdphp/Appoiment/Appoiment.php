@@ -35,7 +35,7 @@ require_once __DIR__ . "/../includes/header.php";
                 echo '<td>'.$appoiment['fecha'].'</td>';
                 echo '<td>'.$appoiment['hora'].'</td>';
                 echo "<td><a href='./delete.php?id=" . $appoiment["id"] . "'><button>🗑️</button></a></td>";
-                echo "<td><button>✏️</button></td>";
+                echo "<td><a href='./edit.php?id=" . $appoiment["id"]. "'<button>✏️</button></td>";
             echo "</tr>";
              }
           ?>
