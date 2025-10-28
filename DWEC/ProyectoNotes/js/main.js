@@ -47,7 +47,8 @@ let ordenados = gradebook.students.sort((a, b) => b.average - a.average);
 const alumName = document.getElementById('name');
 const alumNote = document.getElementById('grades');
 const alumnAvg = document.getElementById('avg');
-const tbody = document.querySelector('body');
+const tbody = document.querySelector('tbody');
+
 
 
 
@@ -66,10 +67,13 @@ function addRow({ name, grades, avg }) {
     const newRow = document.createElement('tr');
     //Añade nuevo alumno.
     const newAlum = document.createElement('td');
+    newAlum.textContent = name;
     //Añade nuevas notas.
     const newNotes = document.createElement('td');
+    newNotes.textContent = grades;
     //Añade media de notas.
     const newAvg = document.createElement('td');
+    newAvg.textContent = calcularAverage(newNotes);
 
     //Añadiendo celdas.
     newRow.appendChild(newAlum);
@@ -80,5 +84,7 @@ function addRow({ name, grades, avg }) {
     tbody.appendChild(newRow);
 
 }
+
+
 
 renderTable(gradebook);

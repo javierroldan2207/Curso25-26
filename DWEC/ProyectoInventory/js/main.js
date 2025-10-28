@@ -73,6 +73,7 @@ function addRow({ name, quantity, price }) {
     });
     
     
+    
     //Add cells to the row
     newRow.appendChild(newNameCell);
     newRow.appendChild(newQuantityCell);
