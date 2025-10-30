@@ -1,6 +1,6 @@
 import './App.css'
 import Profile from './Profile'
-import ejercicio1 from '../../app-react/src/assets/ejercicio1'
+
 
 function App() {
  

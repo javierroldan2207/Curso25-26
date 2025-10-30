@@ -4,8 +4,8 @@ function MostrarOcultar() {
     const [valor, setValor] = useState(false);
 
     function mostrarInfo() {
-        let valor = valor === false ? true : false;
-        setValor(valor);
+        let result = valor === false ? true : false;
+        setValor(result);
     }
 
     return(

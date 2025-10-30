@@ -11,22 +11,13 @@ import MovieCard from './MovieCard'
 import Contador from './Contador'
 import CambiadorTexto from './Cambiadortexto'
 import MostrarOcultar from './MostrarOcultar'
+import ListTask from './ListTask'
+import Regist from './Regist'
 
 function App() {
   return (
     <>
-      <Prueba />
-      <h1>Hola mundo</h1>
-      <p>Buenos</p>
-      <Bio/>
-      <Person/>
-      <SaludososPersonalizado/>
-      <UserCard  name= "Mario" age= {28} city="Londres"/>
-      <UserCard  name= "Lola" age= {76} city="Madird"/>
-      <MovieCard title = "Magos" direcctor = "Luis" year = {2001} />
-      <Contador/>
-      <CambiadorTexto/>
-      <MostrarOcultar/>
+     <Regist/>
     </>
   )
 }
