@@ -34,8 +34,8 @@ require_once __DIR__ . "/../includes/header.php";
                 echo '<td>'.$appoiment['type'].'</td>';
                 echo '<td>'.$appoiment['fecha'].'</td>';
                 echo '<td>'.$appoiment['hora'].'</td>';
-                echo "<td><a href='./delete.php?id=" . $appoiment["id"] . "'><button>🗑️</button></a></td>";
-                echo "<td><a href='./edit.php?id=" . $appoiment["id"]. "'<button>✏️</button></td>";
+                echo "<td><form action='ManageAppoiment.php?action=delete' method='POST'><input type='hidden' name='id' value='" . $appoiment["id"] . "'><button type='submit' class='btn btn-primary'>🗑️</button></form></td>";
+                echo "<td><form action='ManageAppoiment.php?action=edit' method='POST'><input type='hidden' name='id' value='" . $appoiment["id"] . "'><button type='submit' class='btn btn-primary'>✏️</button></form></td>";
             echo "</tr>";
              }
           ?>

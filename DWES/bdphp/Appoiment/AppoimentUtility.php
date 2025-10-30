@@ -28,4 +28,8 @@ class AppoimentUtility{
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public static function updateAppoiment(){
+        
+    }
+
 }
