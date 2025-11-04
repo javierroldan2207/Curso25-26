@@ -1,10 +1,22 @@
+const urlBase = "http://localhost:3000/items";
+const peticion = new XMLHttpRequest();
+peticion.open("GET", urlBase);
+peticion.send();
+
+
 // HTML elements
+
+peticion.addEventListener("load", () => {
+    if (peticion.status === 200) {
+        inventory.items = JSON.parse(peticion.responseText);
+        renderTable(inventory);
+        
+
+    }
+})
+
 const inventory = {
-    items: [
-        { name: "Laptop", quantity: 5, price: 1200 },
-        { name: "Mouse", quantity: 55, price: 20 },
-        { name: "Keyboard", quantity: 15, price: 50 }
-    ],
+    items: [],
     totalItems: 0
 };
 
@@ -49,8 +61,8 @@ const tbody = document.querySelector('tbody');
 
 function addRow({ name, quantity, price }) {
     const newRow = document.createElement('tr');
-    if(price > 50){
-        newRow.style.backgroundColor = "#ff0000ce";
+    if (price > 100) {
+        newRow.style.backgroundColor = "#6d0303c5";
     }
     //Name
     const newNameCell = document.createElement('td');
@@ -71,9 +83,9 @@ function addRow({ name, quantity, price }) {
         removeItem(name, inventory);
         tbody.removeChild(newRow);
     });
-    
-    
-    
+
+
+
     //Add cells to the row
     newRow.appendChild(newNameCell);
     newRow.appendChild(newQuantityCell);

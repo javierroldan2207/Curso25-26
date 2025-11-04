@@ -187,6 +187,78 @@
       ],
       "nivel": 19,
       "region": "Kanto"
+    },
+    {
+      "id": "b0eb",
+      "name": {},
+      "level": {},
+      "country": {}
+    },
+    {
+      "id": "dd15",
+      "name": {},
+      "level": {},
+      "country": {}
+    },
+    {
+      "id": "4a33",
+      "name": {},
+      "level": {},
+      "country": {}
+    },
+    {
+      "id": "8026",
+      "name": "inma",
+      "level": "1000",
+      "country": "brenes"
+    },
+    {
+      "id": "9611",
+      "name": "inma",
+      "level": "1000",
+      "country": "brenes"
+    },
+    {
+      "id": "9654",
+      "name": "",
+      "level": "1000",
+      "country": "brenes"
+    },
+    {
+      "id": "0f93",
+      "name": "javier",
+      "level": "21",
+      "country": "brenes"
+    },
+    {
+      "id": "10f6",
+      "name": "",
+      "level": "1000",
+      "country": "brenes"
+    },
+    {
+      "id": "7acb",
+      "name": "",
+      "level": "1000",
+      "country": "brenes"
+    },
+    {
+      "id": "3081",
+      "name": "",
+      "level": "1000",
+      "country": "brenes"
+    },
+    {
+      "id": "3e08",
+      "name": "",
+      "level": "1000",
+      "country": "brenes"
+    },
+    {
+      "id": "d8bd",
+      "name": "",
+      "level": "1000",
+      "country": "brenes"
     }
   ],
   "paises": [

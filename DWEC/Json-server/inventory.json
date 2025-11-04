@@ -1,0 +1,13 @@
+{"items":[ 
+    { "name": "Laptop", "quantity": 5, "price": 1200 },
+    { "name": "Mouse", "quantity": 55, "price": 20 },
+    { "name": "Keyboard", "quantity": 15, "price": 50 },
+    { "name": "Monitor", "quantity": 10, "price": 250 },
+    { "name": "USB-C Cable", "quantity": 40, "price": 10 },
+    { "name": "Headphones", "quantity": 25, "price": 75 },
+    { "name": "Webcam", "quantity": 8, "price": 90 },
+    { "name": "External Hard Drive", "quantity": 12, "price": 110 },
+    { "name": "Desk Chair", "quantity": 6, "price": 180 },
+    { "name": "Mouse Pad", "quantity": 50, "price": 8 }
+]
+}
