@@ -1,0 +1,60 @@
+main{
+    max-width: 900px;
+    margin: auto;
+    overflow: auto;
+}
+body{
+    background-color: rgba(190, 228, 190, 0.452);
+    margin: 0%;
+    border: 0px;
+    padding: 0px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+header{
+    background-color: rgba(7, 197, 23, 0.842);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color: rgba(7, 197, 23, 0.842);
+    text-align: center;
+}
+
+aside{
+    background-color: rgba(169, 224, 152, 0.815);
+    float: right;
+    width: 34%;
+}
+
+section{
+    float: left;
+    width: 64%;
+    
+}
+
+header ul li{
+    display: inline-block;
+}
+
+article{
+    background-color: white;
+}
+
+footer{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+h1{
+    color: white;
+}
+
+#copy{
+    color: white;
+}
