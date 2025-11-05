@@ -36,6 +36,8 @@ require_once __DIR__ . "/../includes/header.php";
                 echo '<td>'.$appoiment['hora'].'</td>';
                 echo "<td><form action='ManageAppoiment.php?action=delete' method='POST'><input type='hidden' name='id' value='" . $appoiment["id"] . "'><button type='submit' class='btn btn-primary'>🗑️</button></form></td>";
                 echo "<td><form action='ManageAppoiment.php?action=edit' method='POST'><input type='hidden' name='id' value='" . $appoiment["id"] . "'><button type='submit' class='btn btn-primary'>✏️</button></form></td>";
+                echo "<td><form action='ManageAppoiment.php?action=add' method= 'POST'><input type='hidden' name 'id' value='" . $appoiment["id"] . "'><button type = 'submit' class='btn btn-primary'>ADD</button></form></td>";
+
             echo "</tr>";
              }
           ?>

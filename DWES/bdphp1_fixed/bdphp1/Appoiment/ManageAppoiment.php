@@ -41,6 +41,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $id = $_POST['id'];
         AppoimentUtility::deleteCita($id);
         $message = "Cita eliminada correctamente.";
+    } elseif (isset($_POST['add'])) {
+        $id = $_POST['id'];
+        AppoimentUtility::addCita($id);
+        $message = "Cita añadida correctamente.";
     }
 }
 
@@ -65,9 +69,15 @@ if (!$appoiment) {
 
 <h2>
 <?php
-    if ($action === 'edit') echo "Editar cita";
-    elseif ($action === 'delete') echo "Eliminar cita";
-    else echo "Gestión de cita";
+    if ($action === 'edit'){ 
+        echo "Editar cita";
+    }elseif ($action === 'delete'){ 
+        echo "Eliminar cita";
+    }elseif ($action === 'add'){ 
+        echo "Añadir cita";
+    }else{ 
+        echo "Gestión de cita";
+    }
 ?>
 </h2>
 
@@ -100,6 +110,8 @@ if (!$appoiment) {
 
 <?php if ($action === 'edit'): ?>
     <button type="submit" name="save">Guardar cambios</button>
+<?php elseif ($action === 'add'): ?>
+    <button type="submit" name="add">Añadir cita</button>
 <?php elseif ($action === 'delete'): ?>
     <button type="submit" name="confirm_delete">Confirmar eliminación</button>
 <?php endif; ?>
@@ -113,5 +125,4 @@ if (!$appoiment) {
 </body>
 </html>
 
-<?php
-require_once __DIR__ . '/../includes/footer.php';
+

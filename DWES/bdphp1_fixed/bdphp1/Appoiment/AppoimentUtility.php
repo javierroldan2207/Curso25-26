@@ -30,24 +30,14 @@ class AppoimentUtility{
 
    public static function getCitaById($id) {
         $connection = DB::getInstance();
-        $query = $connection->prepare("
-            SELECT c.id, u.nombre_usuario, t.nombre AS tipo_cita, c.fecha, c.hora
-            FROM citas c
-            INNER JOIN usuarios u ON c.usuario_id = u.id
-            INNER JOIN tipos_cita t ON c.tipo_cita_id = t.id
-            WHERE c.id = $id
-        ");
+        $query = $connection->prepare("SELECT c.id, u.nombre_usuario, t.nombre AS tipo_cita, c.fecha, c.hora FROM citas c INNER JOIN usuarios u ON c.usuario_id = u.id INNER JOIN tipos_cita t ON c.tipo_cita_id = t.id WHERE c.id = $id");
         $query->execute();
         return $query->fetch(PDO::FETCH_ASSOC);
     }
 
     public static function updateCita($id, $fecha, $hora) {
         $connection = DB::getInstance();
-        $query = $connection->prepare("
-            UPDATE citas 
-            SET fecha = '$fecha', hora = '$hora' 
-            WHERE id = $id
-        ");
+        $query = $connection->prepare("UPDATE citas SET fecha = '$fecha', hora = '$hora' WHERE id = $id");
         return $query->execute();
     }
 
@@ -57,6 +47,10 @@ class AppoimentUtility{
         return $query->execute();
     }
  
-
+    public static function addCita($id) {
+        $connection = DB::getInstance();
+        $query = $connection->prepare("INSERT INTO citas (usuario_id, tipo_cita_id, fecha, hora) VALUES ()");
+        return $query->execute();
+    }
 
 }
