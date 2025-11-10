@@ -4,21 +4,30 @@ peticion.open("GET", urlBase);
 peticion.send();
 
 
-// HTML elements
-
-peticion.addEventListener("load", () => {
-    if (peticion.status === 200) {
-        inventory.items = JSON.parse(peticion.responseText);
-        renderTable(inventory);
-        
-
-    }
-})
-
 const inventory = {
     items: [],
     totalItems: 0
 };
+
+// HTML elements
+
+/*peticion.addEventListener("load", () => {   
+    if (peticion.status === 200) {
+        inventory.items = JSON.parse(peticion.responseText);
+        renderTable(inventory);
+        
+    }
+})*/
+
+fetch(urlBase)
+.then(items => items.json())
+.then(items => {
+    inventory.items = items;
+    renderTable(inventory);
+})
+.catch(err=>{
+    console.log(err)
+})
 
 
 function updateTotalItems(inventory) {
@@ -129,4 +138,3 @@ function updateRow({ name, quantity, price }) {
 
 }
 
-renderTable(inventory);

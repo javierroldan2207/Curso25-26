@@ -1,13 +1,64 @@
-{"items":[ 
-    { "name": "Laptop", "quantity": 5, "price": 1200 },
-    { "name": "Mouse", "quantity": 55, "price": 20 },
-    { "name": "Keyboard", "quantity": 15, "price": 50 },
-    { "name": "Monitor", "quantity": 10, "price": 250 },
-    { "name": "USB-C Cable", "quantity": 40, "price": 10 },
-    { "name": "Headphones", "quantity": 25, "price": 75 },
-    { "name": "Webcam", "quantity": 8, "price": 90 },
-    { "name": "External Hard Drive", "quantity": 12, "price": 110 },
-    { "name": "Desk Chair", "quantity": 6, "price": 180 },
-    { "name": "Mouse Pad", "quantity": 50, "price": 8 }
-]
+{
+  "items": [
+    {
+      "name": "Laptop",
+      "quantity": 5,
+      "price": 1200,
+      "id": "d3c2"
+    },
+    {
+      "name": "Mouse",
+      "quantity": 55,
+      "price": 20,
+      "id": "8752"
+    },
+    {
+      "name": "Keyboard",
+      "quantity": 15,
+      "price": 50,
+      "id": "9b75"
+    },
+    {
+      "name": "Monitor",
+      "quantity": 10,
+      "price": 250,
+      "id": "5308"
+    },
+    {
+      "name": "USB-C Cable",
+      "quantity": 40,
+      "price": 10,
+      "id": "8642"
+    },
+    {
+      "name": "Headphones",
+      "quantity": 25,
+      "price": 75,
+      "id": "e46c"
+    },
+    {
+      "name": "Webcam",
+      "quantity": 8,
+      "price": 90,
+      "id": "1fd7"
+    },
+    {
+      "name": "External Hard Drive",
+      "quantity": 12,
+      "price": 110,
+      "id": "ef2a"
+    },
+    {
+      "name": "Desk Chair",
+      "quantity": 6,
+      "price": 180,
+      "id": "2e08"
+    },
+    {
+      "name": "Mouse Pad",
+      "quantity": 50,
+      "price": 8,
+      "id": "b77c"
+    }
+    ]
 }
