@@ -1,38 +1,193 @@
 {
   "users": [
-    { "id": "u1", "username": "juanperez", "name": "Juan Pérez", "email": "juanperez@example.com" },
-    { "id": "u2", "username": "mariagomez", "name": "María Gómez", "email": "mariagomez@example.com" },
-    { "id": "u3", "username": "carlossanchez", "name": "Carlos Sánchez", "email": "carlossanchez@example.com" },
-    { "id": "u4", "username": "lauralopez", "name": "Laura López", "email": "lauralopez@example.com" },
-    { "id": "u5", "username": "pedrogarcia", "name": "Pedro García", "email": "pedrogarcia@example.com" },
-    { "id": "u6", "username": "anatorres", "name": "Ana Torres", "email": "anatorres@example.com" },
-    { "id": "u7", "username": "felipecastro", "name": "Felipe Castro", "email": "felipecastro@example.com" },
-    { "id": "u8", "username": "sofiadiaz", "name": "Sofía Díaz", "email": "sofiadiaz@example.com" },
-    { "id": "u9", "username": "lucasramirez", "name": "Lucas Ramírez", "email": "lucasramirez@example.com" },
-    { "id": "u10", "username": "martarodriguez", "name": "Marta Rodríguez", "email": "martarodriguez@example.com" }
+    {
+      "id": "u1",
+      "username": "juanperez",
+      "name": "Juan Pérez",
+      "email": "juanperez@example.com"
+    },
+    {
+      "id": "u2",
+      "username": "mariagomez",
+      "name": "María Gómez",
+      "email": "mariagomez@example.com"
+    },
+    {
+      "id": "u3",
+      "username": "carlossanchez",
+      "name": "Carlos Sánchez",
+      "email": "carlossanchez@example.com"
+    },
+    {
+      "id": "u4",
+      "username": "lauralopez",
+      "name": "Laura López",
+      "email": "lauralopez@example.com"
+    },
+    {
+      "id": "u5",
+      "username": "pedrogarcia",
+      "name": "Pedro García",
+      "email": "pedrogarcia@example.com"
+    },
+    {
+      "id": "u6",
+      "username": "anatorres",
+      "name": "Ana Torres",
+      "email": "anatorres@example.com"
+    },
+    {
+      "id": "u7",
+      "username": "felipecastro",
+      "name": "Felipe Castro",
+      "email": "felipecastro@example.com"
+    },
+    {
+      "id": "u8",
+      "username": "sofiadiaz",
+      "name": "Sofía Díaz",
+      "email": "sofiadiaz@example.com"
+    },
+    {
+      "id": "u9",
+      "username": "lucasramirez",
+      "name": "Lucas Ramírez",
+      "email": "lucasramirez@example.com"
+    },
+    {
+      "id": "u10",
+      "username": "martarodriguez",
+      "name": "Marta Rodríguez",
+      "email": "martarodriguez@example.com"
+    }
   ],
   "articles": [
-    { "id": "a1", "userId": "u1", "title": "Introducción a JavaScript" },
-    { "id": "a2", "userId": "u2", "title": "Guía práctica de React" },
-    { "id": "a3", "userId": "u3", "title": "Aprendiendo Node.js desde cero" },
-    { "id": "a4", "userId": "u4", "title": "Buenas prácticas en CSS" },
-    { "id": "a5", "userId": "u5", "title": "Cómo usar Git y GitHub" },
-    { "id": "a6", "userId": "u6", "title": "Programación orientada a objetos en Python" },
-    { "id": "a7", "userId": "u7", "title": "Fundamentos de bases de datos SQL" },
-    { "id": "a8", "userId": "u8", "title": "Diseño de interfaces modernas" },
-    { "id": "a9", "userId": "u9", "title": "Machine Learning para principiantes" },
-    { "id": "a10", "userId": "u10", "title": "Cómo desplegar apps en la nube" }
+    {
+      "id": "a2",
+      "userId": "u2",
+      "title": "Guía práctica de React",
+      "contenido": "Aprende los fundamentos de React y cómo crear aplicaciones interactivas."
+    },
+    {
+      "id": "a3",
+      "userId": "u3",
+      "title": "Aprendiendo Node.js desde cero",
+      "contenido": "Introducción a Node.js para desarrollar aplicaciones del lado del servidor."
+    },
+    {
+      "id": "a4",
+      "userId": "u4",
+      "title": "Buenas prácticas en CSS",
+      "contenido": "Consejos y técnicas para escribir CSS limpio y mantenible."
+    },
+    {
+      "id": "a5",
+      "userId": "u5",
+      "title": "Cómo usar Git y GitHub",
+      "contenido": "Guía completa para gestionar versiones de tu código con Git y GitHub."
+    },
+    {
+      "id": "a6",
+      "userId": "u6",
+      "title": "Programación orientada a objetos en Python",
+      "contenido": "Aprende POO en Python con ejemplos claros y prácticos."
+    },
+    {
+      "id": "a7",
+      "userId": "u7",
+      "title": "Fundamentos de bases de datos SQL",
+      "contenido": "Conceptos básicos y consultas esenciales para trabajar con bases de datos SQL."
+    },
+    {
+      "id": "a8",
+      "userId": "u8",
+      "title": "Diseño de interfaces modernas",
+      "contenido": "Principios y técnicas para crear interfaces atractivas y usables."
+    },
+    {
+      "id": "a9",
+      "userId": "u9",
+      "title": "Machine Learning para principiantes",
+      "contenido": "Introducción al aprendizaje automático con ejemplos sencillos."
+    },
+    {
+      "id": "a10",
+      "userId": "u10",
+      "title": "Cómo desplegar apps en la nube",
+      "contenido": "Aprende a subir y mantener tus aplicaciones en servicios en la nube."
+    }
   ],
   "comments": [
-    { "id": "c1", "userId": "u2", "postId": "a1", "title": "Muy útil", "content": "La explicación de variables fue excelente." },
-    { "id": "c2", "userId": "u3", "postId": "a2", "title": "Excelente artículo", "content": "Me ayudó a entender mejor los componentes." },
-    { "id": "c3", "userId": "u4", "postId": "a3", "title": "Gracias", "content": "Perfecto para quienes empiezan con Node.js." },
-    { "id": "c4", "userId": "u5", "postId": "a4", "title": "Gran guía", "content": "Las prácticas de CSS me ahorraron mucho tiempo." },
-    { "id": "c5", "userId": "u6", "postId": "a5", "title": "Buen trabajo", "content": "Ahora entiendo mejor cómo usar Git." },
-    { "id": "c6", "userId": "u7", "postId": "a6", "title": "Excelente", "content": "El ejemplo de clases fue muy claro." },
-    { "id": "c7", "userId": "u8", "postId": "a7", "title": "Interesante", "content": "Me encantó la explicación de joins." },
-    { "id": "c8", "userId": "u9", "postId": "a8", "title": "Muy bonito diseño", "content": "Las recomendaciones de color fueron geniales." },
-    { "id": "c9", "userId": "u10", "postId": "a9", "title": "Inspirador", "content": "Excelente introducción a machine learning." },
-    { "id": "c10", "userId": "u1", "postId": "a10", "title": "Muy claro", "content": "Excelente explicación sobre despliegue en la nube." }
+    {
+      "id": "c1",
+      "userId": "u2",
+      "postId": "a1",
+      "title": "Muy útil",
+      "content": "La explicación de variables fue excelente."
+    },
+    {
+      "id": "c2",
+      "userId": "u3",
+      "postId": "a2",
+      "title": "Excelente artículo",
+      "content": "Me ayudó a entender mejor los componentes."
+    },
+    {
+      "id": "c3",
+      "userId": "u4",
+      "postId": "a3",
+      "title": "Gracias",
+      "content": "Perfecto para quienes empiezan con Node.js."
+    },
+    {
+      "id": "c4",
+      "userId": "u5",
+      "postId": "a4",
+      "title": "Gran guía",
+      "content": "Las prácticas de CSS me ahorraron mucho tiempo."
+    },
+    {
+      "id": "c5",
+      "userId": "u6",
+      "postId": "a5",
+      "title": "Buen trabajo",
+      "content": "Ahora entiendo mejor cómo usar Git."
+    },
+    {
+      "id": "c6",
+      "userId": "u7",
+      "postId": "a6",
+      "title": "Excelente",
+      "content": "El ejemplo de clases fue muy claro."
+    },
+    {
+      "id": "c7",
+      "userId": "u8",
+      "postId": "a7",
+      "title": "Interesante",
+      "content": "Me encantó la explicación de joins."
+    },
+    {
+      "id": "c8",
+      "userId": "u9",
+      "postId": "a8",
+      "title": "Muy bonito diseño",
+      "content": "Las recomendaciones de color fueron geniales."
+    },
+    {
+      "id": "c9",
+      "userId": "u10",
+      "postId": "a9",
+      "title": "Inspirador",
+      "content": "Excelente introducción a machine learning."
+    },
+    {
+      "id": "c10",
+      "userId": "u1",
+      "postId": "a10",
+      "title": "Muy claro",
+      "content": "Excelente explicación sobre despliegue en la nube."
+    }
   ]
 }
+
