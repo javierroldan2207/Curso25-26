@@ -1,0 +1,46 @@
+{
+  "clients": [
+    {
+      "id": "1",
+      "nombreCompleto": "Ejemplo Nombre",
+      "telefono": "600123456",
+      "email": "ejemplo@mail.com",
+      "edad": 30,
+      "dni": "12300000X"
+    },
+    {
+      "id": "2199",
+      "name": "javier",
+      "phone": "123456789",
+      "email": "javierroldan2207@gmail.com",
+      "age": "18",
+      "dni": "12345678N"
+    },
+    {
+      "id": "92c6",
+      "name": "juan",
+      "phone": "472347853",
+      "email": "juanillo@gmail.com",
+      "age": "36",
+      "dni": "84657264B"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "1",
+      "fecha": "2025-12-20",
+      "hora": "18:00",
+      "numeroPersonas": 4,
+      "clientId": 1,
+      "tipoActividad": "Piscina"
+    },
+    {
+      "id": "a7d2",
+      "date": "2025-11-21",
+      "hour": "12:06",
+      "persons": "3",
+      "clientId": 2199,
+      "activity": "jump"
+    }
+  ]
+}
